@@ -6,7 +6,7 @@
         var $navRight = $root.find('.gallary-nav-right');
         var containerWidth = $container.width();
         var itemWidth = $container.find('li').outerWidth(true);
-        var maxNum = Math.floor(containerWidth / itemWidth);
+        var maxNum = Math.floor(containerWidth / itemWidth) || 1;
         var totalNum = $container.find('li').length;
         var totalWidth = totalNum * itemWidth;
         var perViewWidth = itemWidth * maxNum;
